@@ -129,6 +129,8 @@ public class Uzdaviniai {
                         System.out.println("Jos abi yra lygios");
                 }
 
+                //home work done
+
         }
 
         static public void main(String[] args) {
