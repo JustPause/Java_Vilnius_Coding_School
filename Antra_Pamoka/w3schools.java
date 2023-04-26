@@ -1,0 +1,19 @@
+package Antra_Pamoka;
+
+class Main {
+    int modelYear;
+    String modelName;
+  
+    public Main(int year, String name) {
+      modelYear = year;
+      modelName = name;
+    }
+}
+
+public class w3schools 
+{
+    public static void main(String[] args) {
+        Main myCar = new Main(1969, "Mustang");
+        System.out.println(myCar.modelYear + " " + myCar.modelName);
+    }
+}
