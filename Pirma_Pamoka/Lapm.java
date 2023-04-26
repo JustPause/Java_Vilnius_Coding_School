@@ -1,3 +1,4 @@
+package Pirma_Pamoka;
 class Lamp {
   
   // stores the value for light

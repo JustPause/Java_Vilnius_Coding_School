@@ -1,3 +1,4 @@
+package Pirma_Pamoka;
 import java.util.concurrent.TimeUnit;
 
 public class ASCII_Table {

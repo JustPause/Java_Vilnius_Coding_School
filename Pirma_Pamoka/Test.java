@@ -1,3 +1,4 @@
+package Pirma_Pamoka;
 public class Test
 { 
     public static void main(String[] args)

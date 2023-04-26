@@ -1,3 +1,4 @@
+package Pirma_Pamoka;
 import java.util.Random;
 
 class Taupykle {
@@ -135,12 +136,14 @@ public class Uzdaviniai {
         }
 
         static public void main(String[] args) {
-                // Pirma();
-                // System.out.println();
-                // Antra();
-                // System.out.println();
-                // Trecia();
-                // System.out.println();
+                System.out.println();
+                Pirma();
+                System.out.println();
+                Antra();
+                System.out.println();
+                Trecia();
+                System.out.println();
                 Ketvirta();
+                System.out.println();
         }
 }

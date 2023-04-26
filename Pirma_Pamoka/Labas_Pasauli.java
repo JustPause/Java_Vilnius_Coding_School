@@ -1,3 +1,4 @@
+package Pirma_Pamoka;
 class Labas_Pasauli {
     public static void main(String[] args) {
         
