@@ -43,6 +43,13 @@ public class Naujas {
         System.out.print(Pirmasis);
     }
 
+    public static void namudarbai() {
+        tinas Didysys = new Katinas();
+        Didysys.Vardas = "Mikazelas";
+        Didysys.Amius = 97;
+        Didysys.Skiepitas = true;
+    }
+
     public static void main(String[] args) {
         Sujunktas();
     }
