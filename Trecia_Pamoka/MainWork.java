@@ -1,18 +1,20 @@
 package Trecia_Pamoka;
 
-public class MainWork {
-    int x; // Create a class attribute
-    int y=6;
+class Person {
+    protected String fname = "John";
+    protected String lname = "Doe";
+    protected String email = "john@doe.com";
+    protected int age = 24;
+}
 
-    // Create a class constructor for the Main class
-    public MainWork() {
-        x = 5; // Set the initial value for the class attribute x
-        System.out.println("Print");
-        y = 5;
-    }
+class MainWork extends Person {
+    private int graduationYear = 2018;
 
     public static void main(String[] args) {
-        MainWork myObj = new MainWork(); // Create an object of class Main (This will call the constructor)
-        System.out.println(myObj.y); // Print the value of x
+        MainWork myObj = new MainWork();
+        System.out.println("Name: " + myObj.fname + " " + myObj.lname);
+        System.out.println("Email: " + myObj.email);
+        System.out.println("Age: " + myObj.age);
+        System.out.println("Graduation Year: " + myObj.graduationYear);
     }
 }
