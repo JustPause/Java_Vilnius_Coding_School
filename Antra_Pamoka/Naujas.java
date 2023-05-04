@@ -19,12 +19,12 @@ public class Naujas {
     }
 
     public static void koreja() {
-        //String angl = "Hello";
+        // String angl = "Hello";
         String kol = null;
 
         kol = "annyeonghaseyo";
 
-        //boolean arStingas = kol instanceof String;
+        // boolean arStingas = kol instanceof String;
 
         System.out.println(kol.length());
         System.out.println(kol.indexOf('y'));
