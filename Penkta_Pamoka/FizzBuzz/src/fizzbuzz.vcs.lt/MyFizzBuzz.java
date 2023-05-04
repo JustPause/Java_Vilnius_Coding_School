@@ -1,4 +1,4 @@
-package fizzbuzz.vcs.lt;
+//package fizzbuzz.vcs.lt;
 
 public class MyFizzBuzz {
     static public void main(String a[]){

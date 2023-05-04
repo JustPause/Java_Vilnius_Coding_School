@@ -7,6 +7,7 @@ public class Main {
         System.out.println("Jei norite suderi: Spausk 1");
         System.out.println("Jei norite atimti: Spausk 2");
         System.out.println("Jei norite iseiti: Spausk 3");
+        System.out.println("Jei norite rasdi diziausia: Spausk 4");
 
         Scanner scn = new Scanner(System.in);
 
@@ -34,14 +35,20 @@ public class Main {
 
                 break;
             case 3:
-                System.out.println("Viso Gero");
-                System.console();
-                System.exit(0);
+                Sk.Iki();
+                break;
+
+            case 4:
+                pirmasSk = man.parasySk();
+                antrasSk = man.parasySk();
+
+                Sk.Diz(pirmasSk, antrasSk);
                 break;
             default:
                 System.out.println("Neteisingas Sk");
-            scn.close();
+                scn.close();
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {

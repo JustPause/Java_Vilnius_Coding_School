@@ -1,4 +1,6 @@
+
 //import java.math.BigDecimal;
+import java.math.BigDecimal;
 import java.util.*;
 
 public class Papildomus_Uzduotiys {
@@ -314,30 +316,77 @@ public class Papildomus_Uzduotiys {
     }
 
     static public void Uz8Redo() {
-        //9.Avalynės parduotuvė. Parduotuvė prekiauja vyriška ir moteriška avalyne. 
-        //Kiekvieną dieną yra  vedama apskaita: užrašoma, kiek batų porų yra parduota ir 
-        //pasižymima informacija apie parduotą porą – vyriška ar moteriška bei poros kaina. 
-        //Parašyti programą, kuri rastų:
-        //už kokią pinigų sumą parduota avalynės per dieną;
-        //už kokią pinigų sumą parduota moteriškos ir vyriškos avalynės atskirai (duomenis pateiktų kolekcijoje); 
-        //kiek vidutiniškai kainavo moteriškų ir vyriškų batų pora; 
+        // 9.Avalynės parduotuvė. Parduotuvė prekiauja vyriška ir moteriška avalyne.
+        // Kiekvieną dieną yra vedama apskaita: užrašoma, kiek batų porų yra parduota ir
+        // pasižymima informacija apie parduotą porą – vyriška ar moteriška bei poros
+        // kaina.
+        // Parašyti programą, kuri rastų:
+        // už kokią pinigų sumą parduota avalynės per dieną;
+        // už kokią pinigų sumą parduota moteriškos ir vyriškos avalynės atskirai
+        // (duomenis pateiktų kolekcijoje);
+        // kiek vidutiniškai kainavo moteriškų ir vyriškų batų pora;
 
         class BatuPora {
-        //Random rd = new Random();
-        //boolean motBatai = rd.nextBoolean();
-        //BigDecimal kaina = new BigDecimal(random(29.99f, 299.99f));
+            // Random rd = new Random();
+            // boolean motBatai = rd.nextBoolean();
+            // BigDecimal kaina = new BigDecimal(random(29.99f, 299.99f));
         }
 
-        int parduotaSiandien = (int)random(1, 100);
+        int parduotaSiandien = (int) random(1, 100);
         List<BatuPora> parduotiBatai = new ArrayList<BatuPora>();
 
-        for(int i = 0; i < parduotaSiandien; i++){
-        BatuPora batai = new BatuPora();
-        parduotiBatai.add(batai);
-}
+        for (int i = 0; i < parduotaSiandien; i++) {
+            BatuPora batai = new BatuPora();
+            parduotiBatai.add(batai);
+        }
+    }
+
+    static public void Uz9() {
+        // 9.Avalynės parduotuvė. Parduotuvė prekiauja vyriška ir moteriška avalyne.
+        // Kiekvieną dieną yra vedama apskaita: užrašoma, kiek batų porų yra parduota ir
+        // pasižymima informacija apie parduotą porą – vyriška ar moteriška bei poros
+        // kaina.
+        // Parašyti programą, kuri rastų:
+        // už kokią pinigų sumą parduota avalynės per dieną;
+        // už kokią pinigų sumą parduota moteriškos ir vyriškos avalynės atskirai
+        // (duomenis pateiktų kolekcijoje);
+        // kiek vidutiniškai kainavo moteriškų ir vyriškų batų pora;
+
+        class BatuPora {
+            Random rd = new Random();
+            boolean motBatai = rd.nextBoolean();
+            BigDecimal kaina = new BigDecimal(random(29.99f, 299.99f));
+        }
+
+        int parduotaSiandien = (int) random(1, 100);
+        List<BatuPora> parduotiBatai = new ArrayList<BatuPora>();
+
+        BigDecimal A = new BigDecimal("0");
+        double sum, sumV, sumM;
+        int sumVsk = 0, sumMsk = 0;
+
+        for (int i = 0; i < parduotaSiandien; i++) {
+            BatuPora batai = new BatuPora();
+            parduotiBatai.add(batai);
+
+            // System.out.println(parduotiBatai.get(i).kaina);
+
+            A = A.add(parduotiBatai.get(i).kaina);
+
+            if (parduotiBatai.get(i).motBatai) {
+                sumM = A.doubleValue();
+                sumVsk++;
+            } else {
+                sumV = A.doubleValue();
+                sumMsk++;
+            }
+        }
+        sum = A.doubleValue();
+        sumVsk = sumVsk / sumVsk;
+        sumMsk = sumMsk / sumMsk;
     }
 
     public static void main(String[] args) {
-        Uz8();
+        Uz9();
     }
 }
