@@ -83,12 +83,39 @@ public class Papildomus_Uzduotiys {
         byte n3 = 1;
         float k = random(0.5f, 2.99f);
 
-        if (k < a) {
-            System.out.println("Perku viena bandelia");
+        if (k <= a) {
+            System.out.print("Perku ");
+            System.out.print(n1);
+            System.out.println("bandelia");
+        }
+        else if (k >= a&&k<=b) {
+            System.out.print("Perku ");
+            System.out.print(n2);
+            System.out.println("bandelia");
+        }
+        else if (k >= b) {
+            System.out.print("Perku ");
+            System.out.print(n3);
+            System.out.println("bandelia");
         }
 
         System.out.println((k < a) + " " + k);
 
     }
 
+    static public void Uz4() {
+        //4. Gamtininkas registruoja likusius žiemoti paukščius. Jo tikslas yra
+        //nustatyti, kurios iš trijų paukščių rūšių atstovų liko žiemoti daugiausia. 
+        //Yra trijų paukščių rūšių kiekiai - r1, r2 ir r3.
+        //Parašykite programą, kuri surikiuotų juos iš eilės nuo didžiausio iki
+        //mažiausio ir apskaičiuotų, kiek skiriasi didžiausias ir mažiausias kiekiai.
+
+        int r1 = (int)random(1500, 6500);
+        int r2 = (int)random(1500, 6500);
+        int r3 = (int)random(1500, 6500);
+
+    }
+    public static void main(String[] args) {
+        Uz3();
+    }
 }
