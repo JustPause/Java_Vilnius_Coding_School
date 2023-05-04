@@ -129,6 +129,7 @@ public class Skaidetes {
         if (intas[6] == intas[7]) {
             boolenas[3] = true;
         }
+        //git test
     }
 
     static void uz7() {
