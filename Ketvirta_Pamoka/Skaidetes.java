@@ -1,12 +1,11 @@
 import java.util.*;
-import java.util.stream.Collectors;
+//import java.util.stream.Collectors;
 
 public class Skaidetes {
 
     static void uz1() {
-        int[] manoMasyvas;
-        manoMasyvas = new int[10];
-        int[] luckyNumbers = new int[] { 1, 17, 35, 49, 54, 34 };
+        // int[] manoMasyvas = new int[10];
+        // int[] luckyNumbers = new int[] { 1, 17, 35, 49, 54, 34 };
         int[] Java_egzaminus = { 8, 5, 5, 3, 8, 7, 7, 8, 2, 5, 2, 3, 8, 9, 3, 7, 10, 4, 9, 6 };
         int Java_egzaminus_Masyvas[] = new int[2];
         double sum = 0;
@@ -30,8 +29,8 @@ public class Skaidetes {
     }
 
     static void uz2() {
-        String vardai = "Justinas,Vilius,Mindaugas,Rokas,Zodas,Engas";
-        List<String> Vardai = new ArrayList<String>(Arrays.asList(vardai.split(",")));
+        //String vardai = "Justinas,Vilius,Mindaugas,Rokas,Zodas,Engas";
+        //List<String> Vardai = new ArrayList<String>(Arrays.asList(vardai.split(",")));
     }
 
     static void uz3() {
@@ -57,12 +56,28 @@ public class Skaidetes {
         System.out.println(Palenetos.get(3));
     }
 
+    static class Mokinys {
+        String vardąPavardę;
+        int pažymius[];
+        float pažymių_vidurkį;
+    }
+
+    static void uz5_0(Mokinys Pirmas, Mokinys Antras) {
+        Mokinys temp = new Mokinys();
+        temp.vardąPavardę = Pirmas.vardąPavardę;
+        temp.pažymius = Pirmas.pažymius;
+        temp.pažymių_vidurkį = Pirmas.pažymių_vidurkį;
+
+        Pirmas.vardąPavardę = Antras.vardąPavardę;
+        Pirmas.pažymius = Antras.pažymius;
+        Pirmas.pažymių_vidurkį = Antras.pažymių_vidurkį;
+
+        Antras.vardąPavardę = temp.vardąPavardę;
+        Antras.pažymius = temp.pažymius;
+        Antras.pažymių_vidurkį = temp.pažymių_vidurkį;
+    }
+
     static void uz5() {
-        class Mokinys {
-            String vardąPavardę;
-            int pažymius[];
-            float pažymių_vidurkį;
-        }
 
         Mokinys mokinys1 = new Mokinys();
         mokinys1.vardąPavardę = "Vilius Viliauskas";
@@ -102,14 +117,15 @@ public class Skaidetes {
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (žurnalą.get(j).pažymių_vidurkį > žurnalą.get(j + 1).pažymių_vidurkį) {
-                    Mokinys temp = new Mokinys();
-                    žurnalą.get(j) = žurnalą.get(j + 1);
+                    uz5_0(žurnalą.get(j), žurnalą.get(j + 1));
                 }
             }
         }
 
         System.out.println(žurnalą.get(0).pažymių_vidurkį + " " + žurnalą.get(1).pažymių_vidurkį + " "
                 + žurnalą.get(2).pažymių_vidurkį);
+
+        System.out.println(žurnalą.get(2).pažymių_vidurkį - žurnalą.get(0).pažymių_vidurkį);
 
     }
 
@@ -129,13 +145,12 @@ public class Skaidetes {
         if (intas[6] == intas[7]) {
             boolenas[3] = true;
         }
-        //git test
     }
 
     static void uz7() {
     }
 
     public static void main(String[] args) {
-        uz6();
+        uz5();
     }
 }

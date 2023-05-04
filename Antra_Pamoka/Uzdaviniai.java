@@ -1,6 +1,6 @@
 package Antra_Pamoka;
 
-import java.math.BigDecimal;
+//import java.math.BigDecimal;
 import java.util.Random;
 
 public class Uzdaviniai {
@@ -18,9 +18,9 @@ public class Uzdaviniai {
     static void pinigais_piniginėje_ir_degalais(){
 
         final float A95 = 1.450f;
-        final float A98 = 1.450f;
-        final float D = 1.300f;
-        final float Dujos = 0.530f;
+        // final float A98 = 1.450f;
+        // final float D = 1.300f;
+        // final float Dujos = 0.530f;
 
         Double pinigaiPinigineje;
         pinigaiPinigineje = random(12.56,30.43);

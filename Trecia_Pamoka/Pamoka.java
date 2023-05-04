@@ -118,8 +118,8 @@ public class Pamoka {
 
         while (true){
             int r1 = random(1, 126);
-            int r2 = random(1, 126);
-            int r3 = random(1, 126);
+            // int r2 = random(1, 126);
+            // int r3 = random(1, 126);
             System.out.print((char)r1 + " ");
             
         }

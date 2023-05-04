@@ -6,7 +6,7 @@ class Labas_Pasauli {
 
         int Viek_Vardo_Raidziu = Varas.length();
 
-        String Pirma_Raide = Varas.substring(0, 1);
+        //String Pirma_Raide = Varas.substring(0, 1);
 
         char VarasRaide = Varas.charAt(0);
       
@@ -24,13 +24,13 @@ class Labas_Pasauli {
 
         float sk = (Viek_Vardo_Raidziu - VarasRaide) + suma;
 
-        boolean arSumaTeisinga = suma > 0;
+        //boolean arSumaTeisinga = suma > 0;
 
         System.out.println(sk + "; ");
 
         System.out.println((int)VarasRaide + "; ");
 
-        int numeris = (int) ((suma - (suma-(int) VarasRaide+ Viek_Vardo_Raidziu)) -(int) VarasRaide) * (-1);
+        //int numeris = (int) ((suma - (suma-(int) VarasRaide+ Viek_Vardo_Raidziu)) -(int) VarasRaide) * (-1);
 
         System.out.println((int) VarasRaide
         );

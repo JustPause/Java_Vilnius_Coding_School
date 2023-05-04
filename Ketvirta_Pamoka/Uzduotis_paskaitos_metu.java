@@ -1,13 +1,13 @@
-import java.lang.reflect.Array;
+//import java.lang.reflect.Array;
 import java.util.*;
 
-public class Uzduotis {
+public class Uzduotis_paskaitos_metu {
 
     private static Random rand = new Random();
 
-    static private int random(int MIN, int MAX) {
-        return rand.nextInt(MAX - MIN + 1) + MIN;
-    }
+    // static private int random(int MIN, int MAX) {
+    //     return rand.nextInt(MAX - MIN + 1) + MIN;
+    // }
 
     static public float random(float MIN, float MAX) {
         return (MIN + rand.nextFloat() * (MAX - MIN));
@@ -15,9 +15,9 @@ public class Uzduotis {
 
     static public void UzPamoka1() {
         int[] pazimiai = { 8, 5, 5, 3, 8, 7, 7, 8, 2, 5, 2, 3, 8, 9, 3, 7, 10, 4, 9, 6 };
-        int[] Hmm1 = new int[pazimiai.length];
-        int[] Hmm2 = new int[pazimiai.length];
-        int[] temp = new int[1];
+        // int[] Hmm1 = new int[pazimiai.length];
+        // int[] Hmm2 = new int[pazimiai.length];
+        // int[] temp = new int[1];
         // padaryti kad surasytu juos i naujas aibes
         int[] Studentai = new int[2];
         for (int i = 0; i < pazimiai.length; i++) {
@@ -38,7 +38,7 @@ public class Uzduotis {
 
         String[] Vardai = { "Justinas", "Vilius", "Mindaugas", "Rokas" };
         List<String> MokiniuVardai = Arrays.asList(Vardai);
-        List<String> MokiniuVardai2 = Arrays.asList(Vardai);
+        // List<String> MokiniuVardai2 = Arrays.asList(Vardai);
 
         System.out.println(MokiniuVardai);
 
@@ -47,7 +47,7 @@ public class Uzduotis {
     }
 
     static public void UzPamoka3() {
-        String[] Data = { "Du", "gaideliai", "du", "gaideliai", "baltus", "žirnius", "kūlė" };
+        //String[] Data = { "Du", "gaideliai", "du", "gaideliai", "baltus", "žirnius", "kūlė" };
         // Set<String> dainele = Arrays.asList(Data);
         // int Data = dainele.size();
     }
@@ -66,7 +66,7 @@ public class Uzduotis {
         System.out.println(planetos.get(8));
 
         boolean a = planetos.containsKey(6);
-        boolean b = planetos.containsKey("Merkurijus");
+        // boolean b = planetos.containsKey("Merkurijus");
 
         if (a) {
             planetos.remove(6);
@@ -89,7 +89,7 @@ public class Uzduotis {
         planetos.put(7, "Saturnas");
         planetos.put(6, "Menulis");
 
-        String[] Data = { "Du", "gaideliai", "du", "gaideliai", "baltus", "žirnius", "kūlė" };
+        //String[] Data = { "Du", "gaideliai", "du", "gaideliai", "baltus", "žirnius", "kūlė" };
 
         pirmieji.add(MokiniuVardai.get(0));
         pirmieji.add(planetos.get(1));

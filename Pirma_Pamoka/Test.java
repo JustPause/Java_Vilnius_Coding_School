@@ -9,8 +9,8 @@ public class Test
         int int_var = 2000100010;
         long long_var = 2147483647;
         float float_var = 0.1234567890123456789f;
-        double double_var = 0.1234567890123456789f;
-        boolean boolean_var = true;
+        // double double_var = 0.1234567890123456789f;
+        // boolean boolean_var = true;
 
         System.out.printf("%%c is %c\n", 'A');
         System.out.printf("%%d is %d %-4d1 %03d\n", int_var, short_var, byte_var); 
