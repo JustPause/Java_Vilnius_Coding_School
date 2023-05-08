@@ -1,4 +1,4 @@
-## Getting Started
+# Getting Started
 
 Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
@@ -22,26 +22,25 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 ## Uzduotis
 
 Sukurkite bankomato programą:
- 
-Bankomate yra 500 pinigų, naudotojas paleidęs programą yra paprašomas įvesti pin 
+
+Bankomate yra 500 pinigų, naudotojas paleidęs programą yra paprašomas įvesti pin
 kodą.  
 
 Jei įvestas pin kodas teisingas (teisingas kodas yra “testas”) naudotojas gauna pranešimą, kad sėkmingai prisijungė.  
 
-Pin kodo įvedimas tikrinamas 3 kartus. Jeigu 3 kartus įvestas neteisingai, naudotojas gauna pranešimą, kad sąskaita blokuota ir programa sustoja. 
+Pin kodo įvedimas tikrinamas 3 kartus. Jeigu 3 kartus įvestas neteisingai, naudotojas gauna pranešimą, kad sąskaita blokuota ir programa sustoja.
 
 Kai naudotojas teisingai įveda pin kodą ("testas"), sistema paklausia ką nori daryti: išgryninti pinigų ar baigti darbą.  
 
 Jeigu pasirenkama “išgryninti”, tuomet paprašo įvesti pinigų kiekį, kurį nori išsigryninti. Kiekis negali būti didesnis nei bankomate yra pinigų, jei įveda daugiau, tuomet informuojamas, kad bankomate nėra tiek pinigų ir paprašo įvesti mažesnę sumą.
 
-Įvedus tinkamą sumą, ji yra išgryninama (nuimta pinigų suma minusuojama iš buvusio bankomato likučio) ir parašoma, jog pinigai išgryninti. Tuomet programa vėl klausia ką nori daryti, tol, kol nesibaigia pinigai arba nenusprendžiama baigti darbo. 
+Įvedus tinkamą sumą, ji yra išgryninama (nuimta pinigų suma minusuojama iš buvusio bankomato likučio) ir parašoma, jog pinigai išgryninti. Tuomet programa vėl klausia ką nori daryti, tol, kol nesibaigia pinigai arba nenusprendžiama baigti darbo.
 
-Pasirinkus baigti darbą, išeinama iš programos. 
+Pasirinkus baigti darbą, išeinama iš programos.
 
-------------
+---------------------------------------------------------------------------
 
 Turi būti sukurtos trys klasės ir implementuoti jų metodai:
-
 
 public class Naudotojas {
 
@@ -113,11 +112,11 @@ public class Paleidimas {
     }
 }
 
--------------
+---------------------------------------------------------------------------
 
 PinCodas
     for (tikrinama 3 kartus)
-        if false 
+        if false
             if neteisingas
                 println (sąskaita blokuota) programa sustoja
         if true = println (sėkmingai prisijungė)

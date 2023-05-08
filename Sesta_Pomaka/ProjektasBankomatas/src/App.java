@@ -3,7 +3,7 @@ import java.util.Scanner;
 class Naudotojas {
     static final int tikrasisPin = 672197;
 
-    private final String teisingasPin = "testas";
+    //private final String teisingasPin = "testas";
 
     static int bankas = 500;
 
@@ -33,6 +33,7 @@ class Naudotojas {
                 System.out.println("Kodas neteisingas");
             }
         }
+        sc.close();
     }
 
     static void apskaicuokite() {
@@ -59,6 +60,7 @@ class Naudotojas {
         else{
             System.out.println("Ivestas neteisingas skaicius");
         }
+        sc.close();
     }
 }
 
