@@ -6,6 +6,7 @@ public class IOManager {
 
     Scanner sc1 = new Scanner(System.in);
     Scanner sc2 = new Scanner(System.in);
+
     private String inputMessage;
     private int action;
 
@@ -28,5 +29,4 @@ public class IOManager {
     public int getAction() {
         return action;
     }
-
 }

@@ -18,6 +18,7 @@ public class Decoder {
             atlipintaString = atlipintaString + cypher.charAt(i);
             // System.out.println(cypher.charAt(i));
         }
+        
         this.plainString = atlipintaString;
     }
 }

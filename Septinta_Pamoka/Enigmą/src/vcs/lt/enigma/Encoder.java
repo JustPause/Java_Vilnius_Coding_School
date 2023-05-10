@@ -26,8 +26,10 @@ public class Encoder {
 
     public void užkodavimo_metodą(String plainText_String) {
         String Zodis = "";
+
         Zodis = generuok() + Zodis;
         Zodis = generuok() + Zodis;
+
         // plainText = generuok() + plainText;
         // plainText.insert(i, generuok())
         // StringBuilder sb = new StringBuilder(plainText);
@@ -35,6 +37,7 @@ public class Encoder {
         for (int i = 0 + 2; i < plainText_String.length() + 2; i++) {
             Zodis = Zodis + plainText_String.charAt(i - 2) + generuok();
         }
+        
         Zodis = Zodis + generuok();
         this.cypher = Zodis;
     }

@@ -3,8 +3,6 @@ package vcs.lt.enigma;
 public class App {
     public static void main(String[] args) throws Exception {
         String inPuString = "";
-
-        // Decoder B = new Decoder();
         IOManager C = new IOManager();
 
         // ---------------------------------------------------------------------
@@ -16,19 +14,22 @@ public class App {
         // --------------------------------------------------------------------
 
         C.paklauskVeksmo();
-        switch (C.getAction()) {
+        switch (C.getAction()) 
+        {
             case 1:
                 C.prasykZinutes();
                 Encoder A = new Encoder(C.getInputMessage());
                 A.generuok();
                 System.out.println(A.getCypher());
                 break;
+
             case 2:
                 C.prasykZinutes();
                 Decoder B = new Decoder(C.getInputMessage());
                 B.DecoderProces();
                 System.out.println(B.getPlainString());
                 break;
+                
             default:
                 System.out.println("Neteisingas veiksams");
         }
