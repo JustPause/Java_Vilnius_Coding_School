@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 class Naudotojas {
     static final int tikrasisPin = 672197;
-
-    //private final String teisingasPin = "testas";
+    static Scanner sc = new Scanner(System.in);
+    // private final String teisingasPin = "testas";
 
     static int bankas = 500;
 
@@ -15,7 +15,6 @@ class Naudotojas {
     }
 
     static void gautiPin() {
-        Scanner sc = new Scanner(System.in);
 
         for (int i = 0; i < 3; i++) {
             System.out.println("Yveskitia savaji koda");
@@ -33,14 +32,12 @@ class Naudotojas {
                 System.out.println("Kodas neteisingas");
             }
         }
-        sc.close();
     }
 
     static void apskaicuokite() {
         System.out.println("sistema paklausia ką nori daryti");
         System.out.println("1. išgryninti pinigų ar 2. baigti darbą");
         System.out.print(": ");
-        Scanner sc = new Scanner(System.in);
 
         int ats1 = sc.nextInt();
 
@@ -56,11 +53,10 @@ class Naudotojas {
             } else {
                 System.out.println("Perdauk pinigu norite pasimti");
             }
-        }
-        else{
+        } else {
             System.out.println("Ivestas neteisingas skaicius");
         }
-        sc.close();
+        System.out.println("Jusms liko " + bankas);
     }
 }
 
@@ -70,7 +66,7 @@ public class App {
         System.out.println("Tavo Kodas: 672197");
 
         Naudotojas.gautiPin();
-        while(true){
+        while (true) {
             Naudotojas.apskaicuokite();
         }
     }
