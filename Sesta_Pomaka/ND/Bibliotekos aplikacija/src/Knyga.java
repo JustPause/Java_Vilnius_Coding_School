@@ -1,5 +1,5 @@
 public class Knyga {
     int išleidimo_metus;
-    String autorių;
+    Autorius autorių;
     String pavadinimą;
 }
