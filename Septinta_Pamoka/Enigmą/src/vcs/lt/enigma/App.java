@@ -2,7 +2,6 @@ package vcs.lt.enigma;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        String inPuString = "";
         IOManager C = new IOManager();
 
         // ---------------------------------------------------------------------
@@ -29,7 +28,7 @@ public class App {
                 B.DecoderProces();
                 System.out.println(B.getPlainString());
                 break;
-                
+
             default:
                 System.out.println("Neteisingas veiksams");
         }
