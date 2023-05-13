@@ -1,6 +1,12 @@
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class Camellia {
     public static void main(String[] args) throws Exception {
-        String charString = String.CASE_INSENSITIVE_ORDER
-        System.out.println("Hello, World!");
+        Work work = new Work();
+        work.input_metod();
+        work.print();
+
     }
 }
