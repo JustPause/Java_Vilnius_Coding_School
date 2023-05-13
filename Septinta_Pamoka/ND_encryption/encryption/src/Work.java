@@ -28,10 +28,10 @@ public class Work {
 
     public String DeCodeWork(String input) {
         String outputString = "";
+        Collections.shuffle(charStringShuffle, rn);
 
         for (char charChar : input.toCharArray()) {
             int replace = charStringShuffle.indexOf(charChar);
-            // System.out.println(charStringShuffle.get(replace));
             outputString = outputString + charString.get(replace);
         }
         return outputString;
@@ -39,7 +39,6 @@ public class Work {
 
     public String EnCodeWork(String input) {
         String outputString = "";
-        String outputString1 = "";
 
         // for (int i = 0; i < charString.size(); i++) {
         // System.out.printf("%d. |%c| - {%c}",i ,charString.get(i),
@@ -52,11 +51,9 @@ public class Work {
 
         for (char charChar : input.toCharArray()) {
             int replace = charString.indexOf(charChar);
-            // System.out.println(charStringShuffle.get(replace));
             outputString = outputString + charStringShuffle.get(replace);
-
         }
-        return DeCodeWork(outputString);
+        return outputString;
     }
 
     public void Select(String pasirinkimas) {
@@ -64,12 +61,12 @@ public class Work {
             case "kuodot":
             case "k":
             case "0":
-                EnCodeWork(input);
+                System.out.println(EnCodeWork(input));
                 break;
             case "atkuodot":
             case "a":
             case "1":
-                DeCodeWork(input);
+                System.out.println(DeCodeWork(input));
                 break;
             default:
                 System.out.printf(
@@ -95,7 +92,7 @@ public class Work {
     }
 
     public void print() {
-        
+
     }
 
 }
