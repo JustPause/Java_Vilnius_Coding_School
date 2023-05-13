@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 import java.util.ArrayList;
@@ -8,9 +9,12 @@ public class Work {
 
     public List<Character> charString = new ArrayList<>();
     public List<Character> charStringShuffle = new ArrayList<>();
-    private String input_unhast;
-    private String input_hast;
-    Scanner sc = new Scanner(System.in);
+    private String input;
+    Scanner GetString = new Scanner(System.in);
+    Scanner GetSeed = new Scanner(System.in);
+    Scanner GetAnser = new Scanner(System.in);
+    Random rn;
+    int rnseed;
 
     public Work() {
 
@@ -20,41 +24,69 @@ public class Work {
             charStringShuffle.add((char) i);
 
         } // sugeneruoja charecterius kurie pakeis esamas raides
-
-        Collections.shuffle(charStringShuffle);
     }
 
-    public void input_metod() {
-        System.out.println("Iveskite Savaji zody");
-        input_unhast = sc.nextLine();
-    }
-
-    public String Work() {
+    public String EnCodeWork(String input) {
         String outputString = "";
 
-        for (int i = 0; i < charString.size(); i++) {
-            System.out.printf("%d. |%c| - {%c}",i ,charString.get(i), charStringShuffle.get(i));
-            
-        }
-        System.out.println();
-        for (int i = 0; i < input_unhast.length(); i++) {
-            int replace = input_unhast.charAt(i);
-            System.out.println(charString.get(i));
-            // outpuString = outpuString + (char) replace;
+        // for (int i = 0; i < charString.size(); i++) {
+        // System.out.printf("%d. |%c| - {%c}",i ,charString.get(i),
+        // charStringShuffle.get(i));
+
+        // }
+        // System.out.println();
+
+        Collections.shuffle(charStringShuffle, rn);
+
+        for (char charChar : input.toCharArray()) {
+            int replace = charString.indexOf(charChar);
+            // System.out.println(charStringShuffle.get(replace));
+            outputString = outputString + charStringShuffle.get(replace);
         }
         return outputString;
     }
 
+    public String DeCodeWork(String input) {
+        String outputString = "";
+
+        Collections.shuffle(charStringShuffle, rn);
+
+        for (char charChar : input.toCharArray()) {
+            int replace = charString.indexOf(charChar);
+            // System.out.println(charStringShuffle.get(replace));
+            outputString = outputString + charStringShuffle.get(replace);
+        }
+        return outputString;
+    }
+
+    public void Select(String pasirinkimas) {
+        switch (pasirinkimas.toLowerCase()) {
+            case "kuodot":
+            case "k":
+            case "0":
+                EnCodeWork(input);
+                break;
+        }
+    }
+
+    public void input_metod() {
+
+        System.out.println("Kuodot ar Ankuodok");
+        String pasirinkimas = GetAnser.nextLine();
+
+        System.out.println("Iveskite Savaji zody");
+        input = GetString.nextLine();
+
+        System.out.println("Iveskite sekla");
+        rnseed = GetSeed.nextInt();
+
+        rn = new Random(rnseed);
+
+        Select(pasirinkimas);
+    }
+
     public void print() {
-        System.out.println(Work());
-    }
-
-    public void setInput_unhast(String input_unhast) {
-        this.input_unhast = input_unhast;
-    }
-
-    public String getInput_hast() {
-        return input_hast;
+        System.out.println(EnCodeWork(input));
     }
 
 }
