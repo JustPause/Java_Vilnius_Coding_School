@@ -16,14 +16,22 @@ public class Work {
     Random rn;
     int rnseed;
 
-    public Work() {
+    public Work(int ofset) {
 
-        for (int i = 33; i < 127; i++) {
+        for (int i = 32; i < 127; i++) {
 
             charString.add((char) i);
-            charStringShuffle.add((char) i);
+            //charStringShuffle.add((char) i);
 
         } // sugeneruoja charecterius kurie pakeis esamas raides
+
+
+        for (int i = 32 + ofset; i < 127 + ofset; i++) {
+
+            //charString.add((char) i);
+            charStringShuffle.add((char) i);
+
+        }
     }
 
     public String DeCodeWork(String input) {
