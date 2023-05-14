@@ -3,6 +3,5 @@ public class Camellia {
         Work work = new Work(0);
         work.input_metod();
         work.print();
-
     }
 }
