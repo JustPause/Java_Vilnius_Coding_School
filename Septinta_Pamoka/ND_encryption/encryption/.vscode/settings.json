@@ -1,7 +1,16 @@
 {
-    "java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.configuration.runtimes": [
+        {
+          "name": "JavaSE-17",
+          "path": "/home/justpause/Downloads/jdk-17.0.7+7",
+          "default": true
+        },
+      ]
 }
