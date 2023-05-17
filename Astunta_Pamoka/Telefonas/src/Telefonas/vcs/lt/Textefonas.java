@@ -23,7 +23,12 @@ public class Textefonas extends Telefonas {
 
     @Override
     public void paskambink(String tlfNr) {
-
+        if (this.pingu_likutis.compareTo(SKAMBUCIO_KAINA) <= 0) {
+            System.out.println("Skmabucio pinigu neuztenka");
+        } else {
+            super.paskambink(tlfNr);
+            this.pingu_likutis = this.pingu_likutis.subtract(SKAMBUCIO_KAINA);
+        }
     }
 
 }

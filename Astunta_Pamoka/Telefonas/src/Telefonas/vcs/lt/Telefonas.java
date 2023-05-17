@@ -1,5 +1,7 @@
 package Telefonas.vcs.lt;
 
+import java.math.BigDecimal;
+
 public class Telefonas {
     private String numeris;
     private String skambutis;
@@ -22,13 +24,16 @@ public class Telefonas {
         this.numeris = nr;
     }
 
+    public Telefonas(BigDecimal bigDecimal) {
+    }
+
     public void paskambink(String tlfNr) {
         System.out.println("Abonimentas " + this.numeris + " skambina abonimentui " + tlfNr);
     }
 
     @Override
-public String toString(){
-    return "Telefono nr yra " + numeris + "";
-}
+    public String toString() {
+        return "Telefono nr yra " + numeris + ", telefono melodija yra " + skambutis;
+    }
 
 }
