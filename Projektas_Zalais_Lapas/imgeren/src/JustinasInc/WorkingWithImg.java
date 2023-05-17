@@ -18,24 +18,31 @@ public class WorkingWithImg {
 
     static void WorkingWithImg(String path) throws IOException {
 
+        String Sakinys = Read();
+
         // Creating a subimage of given dimensions
-        BufferedImage Image = new BufferedImage(100, 100, BufferedImage.TYPE_INT_RGB);
+        BufferedImage Image = new BufferedImage((int)Math.sqrt(Sakinys.length())+1, (int)Math.sqrt(Sakinys.length())+1, BufferedImage.TYPE_INT_RGB);
         File f = null;
 
         int width = Image.getWidth();
-        int height = Image.getHeight();
+        int height = Image.getHeight(); 
 
-        String Sakinys = Read();
+        int w = 0;
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
 
-                 int q = x;
+                w++;
 
                 // // replace RGB value with avg
-                int p = (q << 16) | ((int) (Math.round(q / 1.8)) << 8) | 0;
-                if (Sakinys.length() > (y + x)) {
-                    int p2 = (q << 16) | ((int) (Math.round(q / 1.8)) << 8) | Sakinys.toCharArray()[y + x];
 
+                //int p = (q << 16) | ((int) (Math.round(q / 1.8)) << 8) | 0;
+
+                if (Sakinys.length() > w) {
+                    
+
+                    int q = Sakinys.toCharArray()[w];
+
+                    int p2 = (q << 16) | (q << 8) | (q << 0);
                     Image.setRGB(x, y, p2);
                 } else {
                     Image.setRGB(x, y, 0x080808);
