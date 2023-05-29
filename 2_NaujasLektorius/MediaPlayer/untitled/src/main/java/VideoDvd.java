@@ -6,6 +6,7 @@ public class VideoDvd implements MultiMedia{
 
     @Override
     public void play(){
+
         System.out.println("DiV player playing artst" + movieName + " Movie");
     }
 }
