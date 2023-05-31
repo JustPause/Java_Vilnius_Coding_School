@@ -1,4 +1,4 @@
-package VCS;
+package VCS.exept;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

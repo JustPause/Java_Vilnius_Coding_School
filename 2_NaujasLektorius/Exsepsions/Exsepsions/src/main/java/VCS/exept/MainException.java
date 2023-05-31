@@ -1,4 +1,4 @@
-package VCS;
+package VCS.exept;
 
 public class MainException {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package VCS;
+package VCS.exept;
 
 public class ArgumentIsZeroException extends Throwable {
     @Override
