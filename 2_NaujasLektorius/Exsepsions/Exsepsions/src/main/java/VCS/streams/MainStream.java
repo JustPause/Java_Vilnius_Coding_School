@@ -12,6 +12,7 @@ public class MainStream {
 		List<String> sarasas = new ArrayList<>();
 		sarasas.addAll(
 				Arrays.asList("a5", "a9", "b0", "a12", "bc8a", "c5")
+				//Hi
 		);
 
 		System.out.println(sarasas);
