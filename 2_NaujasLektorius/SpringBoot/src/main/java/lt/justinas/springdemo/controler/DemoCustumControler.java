@@ -5,6 +5,7 @@ import lt.justinas.springdemo.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.nio.file.Path;
@@ -31,5 +32,21 @@ public class DemoCustumControler {
     public @ResponseBody List<Customer> gatAllCustumers() {
         return custumerService.getAllCustumers();
     }
+
+    @GetMapping(path = "/{id}")
+    public @ResponseBody Customer gatAllCustumers(@PathVariable int id) {
+        return custumerService.getCustumer(id);
+    }
+
+    @GetMapping(path = "/number/{id}")
+    public @ResponseBody Customer getCustomerLikeNameByNumber (@PathVariable int id) {
+        return custumerService.getCustomerByNumber(id);
+    }
+
+    @GetMapping(path = "/{name}")
+    public @ResponseBody List<Customer> getCustomerLikeName (@PathVariable String name) {
+        return custumerService.getCustumerLikeName("%" + name + "%");
+    }
+    // "SELECT * FROM customers WHERE customerName LIKE :name"
 
 }

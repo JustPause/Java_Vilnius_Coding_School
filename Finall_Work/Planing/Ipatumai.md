@@ -1,2 +1,0 @@
-# Ipatumai
-    1. 
