@@ -43,7 +43,7 @@ public class DemoCustumControler {
         return custumerService.getCustomerByNumber(id);
     }
 
-    @GetMapping(path = "/{name}")
+    @GetMapping(path = "/name/{name}")
     public @ResponseBody List<Customer> getCustomerLikeName (@PathVariable String name) {
         return custumerService.getCustumerLikeName("%" + name + "%");
     }
