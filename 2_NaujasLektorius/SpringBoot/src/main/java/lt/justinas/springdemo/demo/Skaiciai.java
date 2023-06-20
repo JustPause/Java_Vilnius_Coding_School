@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "skaiciai")
 @Getter
@@ -21,15 +24,19 @@ public class Skaiciai {
 	private Long id;
 
 	@Column(name = "pavadinimas")
-	private Long pavadinimas;
+	private String pavadinimas;
 
 	@Column(name = "skaicus")
 	private Long skaicus;
 
 	@Column(name = "valiuta")
-	private Long valiuta;
+	private String valiuta;
 
-	public Skaiciai(Long pavadinimas, Long skaicus, Long valiuta) {
+	@OneToMany(mappedBy = "skaicius", cascade = CascadeType.ALL)
+	 List<Komentaras> komentarai = new ArrayList<>();
+
+
+	public Skaiciai(String pavadinimas, Long skaicus, String valiuta) {
 		this.pavadinimas = pavadinimas;
 		this.skaicus = skaicus;
 		this.valiuta = valiuta;

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">B-DayGetter</string>
+    <string name="add_user">Add User</string>
+    <string name="list_users">List Users</string>
+    <string name="email">Email</string>
+    <string name="User_name">User name</string>
+    <string name="date">Date</string>
+    <string name="age_will_be">Age</string>
+    <string name="CountDown">DD:HH:MM:SS</string>
 </resources>

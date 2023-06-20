@@ -5,14 +5,66 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity" android:id="@+id/Main_Window">
+
     <TextView
+            android:text="@string/User_name"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
+            android:layout_height="wrap_content" android:id="@+id/User_name"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/Date" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:textAlignment="center"/>
+
+    <TextView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="@string/CountDown"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" android:id="@+id/MainText"/>
+            app:layout_constraintTop_toTopOf="parent"
 
+            android:id="@+id/B_day_countdown"
+            android:textSize="34sp" android:fontFamily="monospace" android:textAlignment="center"
+    />
+
+    <TextView
+            android:text="@string/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Date"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/B_day_countdown" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:textAlignment="center"/>
+
+    <TextView
+            android:text="@string/age_will_be"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Age_will_be"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/B_day_countdown" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+            android:textAlignment="center"/>
+
+    <Button
+            android:text="@string/add_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Add_User"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="24dp"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="24dp"/>
+    <Button
+            android:text="@string/list_users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/List_Users"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="24dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"/>
+    <Button
+            android:text="@string/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/Send_email_to_the_user"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="24dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
