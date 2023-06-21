@@ -9,11 +9,35 @@ import androidx.appcompat.app.AppCompatActivity;
 public
 class MainActivity extends AppCompatActivity {
 
-	String DataBaseUserName = "Justinas";
-	String DataBaseUserSurName = "Stankunas";
-	String DataBaseUserYear = "2003";
-	String DataBaseUserMonth = "06";
-	String DataBaseUserDay = "25";
+	String dataBaseUserName = "Justinas";
+	String dataBaseUserSurName = "Stankunas";
+	String dataBaseUserYear = "2003";
+	String dataBaseUserMonth = "6";
+	String dataBaseUserDay = "6";
+
+	int nowTimeYear = java.time.LocalDate.now().getYear();
+	int nowTimeMonth = java.time.LocalDate.now().getMonthValue();
+	int nowTimeDay = java.time.LocalDate.now().getDayOfMonth();
+
+	int bDayOf = java.time.LocalDate.of(Integer.parseInt(dataBaseUserYear), Integer.parseInt(dataBaseUserMonth),
+		Integer.parseInt(dataBaseUserDay)).getDayOfYear();
+
+	int todayDay = java.time.LocalDate.now().getDayOfYear();
+	int todayTimeH = java.time.LocalDateTime.now().getHour();
+	int todayTimeM = java.time.LocalDateTime.now().getMinute();
+	int todayTimeS = java.time.LocalDateTime.now().getSecond();
+
+	void UpdateInt() {
+		nowTimeYear = java.time.LocalDate.now().getYear();
+		nowTimeMonth = java.time.LocalDate.now().getMonthValue();
+		nowTimeDay = java.time.LocalDate.now().getDayOfMonth();
+		bDayOf = java.time.LocalDate.of(Integer.parseInt(dataBaseUserYear), Integer.parseInt(dataBaseUserMonth),
+			Integer.parseInt(dataBaseUserDay)).getDayOfYear();
+		todayDay = java.time.LocalDate.now().getDayOfYear();
+		todayTimeH = java.time.LocalDateTime.now().getHour();
+		todayTimeM = java.time.LocalDateTime.now().getMinute();
+		todayTimeS = java.time.LocalDateTime.now().getSecond();
+	}
 
 	@Override
 	protected
@@ -27,36 +51,55 @@ class MainActivity extends AppCompatActivity {
 		age_will_be();
 	}
 
+
+	@SuppressLint("SetTextI18n")
+
 	private
 	void init_Data_B_day_countdown() {
 		TextView textView = findViewById(R.id.B_day_countdown);
 
-/*
-        java.time.LocalDate.of(Integer.parseInt(DataBaseUserYear), Integer.parseInt(DataBaseUserMonth), Integer.parseInt(DataBaseUserDay));
-*/
-		int NowTimeYear = java.time.LocalDate.now().getYear();
-		int NowTimeMonth = java.time.LocalDate.now().getMonthValue();
-		int NowTimeDay = java.time.LocalDate.now().getDayOfMonth();
+		Log.d("Debug1", nowTimeYear + " " + nowTimeMonth + " " + nowTimeDay);
+		Log.d("Debug1", dataBaseUserYear + " " + dataBaseUserMonth + " " + dataBaseUserDay);
 
-		Log.d("Debug1", NowTimeYear + " " + NowTimeMonth + " " + NowTimeDay);
-		Log.d("Debug1", DataBaseUserYear + " " + DataBaseUserMonth + " " + DataBaseUserDay);
+		if (bDayOf - todayDay < 0) {
+			textView.setText(
+				String.valueOf(bDayOf + 365 - todayDay) + " Days " + (24 - todayTimeH) + " Hour\n " + (60 - todayTimeM) +
+					" Minute " + (60 - todayTimeS) + " Second ");
+		} else {
+			textView.setText(
+				String.valueOf(bDayOf - todayDay) + " Days " + (24 - todayTimeH) + " Hour\n " + (60 - todayTimeM) + " Minute " +
+					(60 - todayTimeS) + " Second ");
+		}
+//		Period a = Period.between(
+//			LocalDate.of(
+//				Integer.parseInt(dataBaseUserYear+1),
+//				Integer.parseInt(dataBaseUserMonth),
+//				Integer.parseInt(dataBaseUserDay)),
+//			LocalDate.now());
+//		Log.d("Debug2",a.toString());
 
-		textView.setText(String.valueOf(java.time.LocalDate.now().getDayOfYear()));
+		Thread thread = new Thread() {
 
-		Log.d("Debug2", Integer.toString(java.time.LocalDate.now().getDayOfYear()));
-		Log.d("Debug2", Integer.toString(
-			java.time.LocalDate.of(Integer.parseInt(DataBaseUserYear), Integer.parseInt(DataBaseUserMonth),
-				Integer.parseInt(DataBaseUserDay)).getDayOfYear()));
-//        Log.d("Debug3", Integer.toString(java.time.LocalDate.of(
-//                Integer.parseInt(DataBaseUserYear),
-//                Integer.parseInt(DataBaseUserMonth),
-//                Integer.parseInt(DataBaseUserDay)
-//        ).getDayOfYear() + java.time.LocalDate.now()
-//                .getDayOfYear()));
+			@Override
+			public
+			void run() {
+				try {
+					Thread.sleep(1000);
+					runOnUiThread(new Runnable() {
+						@Override
+						public
+						void run() {
+							UpdateInt();
+							init_Data_B_day_countdown();
+						}
+					});
+				} catch (InterruptedException e) {
+				}
+			}
+		};
 
-		Log.d("Debug3", Integer.toString((java.time.LocalDate.now().getDayOfYear() -
-			java.time.LocalDate.of(Integer.parseInt(DataBaseUserYear), Integer.parseInt(DataBaseUserMonth),
-				Integer.parseInt(DataBaseUserDay)).getDayOfYear())));
+		thread.start();
+
 	}
 
 	@SuppressLint("SetTextI18n")
@@ -70,7 +113,7 @@ class MainActivity extends AppCompatActivity {
 	protected
 	void date() {
 		TextView textView = findViewById(R.id.Date);
-		textView.setText(DataBaseUserYear + " " + DataBaseUserMonth + " " + DataBaseUserDay);
+		textView.setText(dataBaseUserYear + " " + dataBaseUserMonth + " " + dataBaseUserDay);
 	}
 
 	@SuppressLint("SetTextI18n")
