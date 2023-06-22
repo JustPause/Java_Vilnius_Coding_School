@@ -3,6 +3,7 @@ package com.example.b_daygetter;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -58,8 +59,8 @@ class MainActivity extends AppCompatActivity {
 	void init_Data_B_day_countdown() {
 		TextView textView = findViewById(R.id.B_day_countdown);
 
-		Log.d("Debug1", nowTimeYear + " " + nowTimeMonth + " " + nowTimeDay);
-		Log.d("Debug1", dataBaseUserYear + " " + dataBaseUserMonth + " " + dataBaseUserDay);
+//		Log.d("Debug1", nowTimeYear + " " + nowTimeMonth + " " + nowTimeDay);
+//		Log.d("Debug1", dataBaseUserYear + " " + dataBaseUserMonth + " " + dataBaseUserDay);
 
 		if (bDayOf - todayDay < 0) {
 			textView.setText(
@@ -70,13 +71,6 @@ class MainActivity extends AppCompatActivity {
 				String.valueOf(bDayOf - todayDay) + " Days " + (24 - todayTimeH) + " Hour\n " + (60 - todayTimeM) + " Minute " +
 					(60 - todayTimeS) + " Second ");
 		}
-//		Period a = Period.between(
-//			LocalDate.of(
-//				Integer.parseInt(dataBaseUserYear+1),
-//				Integer.parseInt(dataBaseUserMonth),
-//				Integer.parseInt(dataBaseUserDay)),
-//			LocalDate.now());
-//		Log.d("Debug2",a.toString());
 
 		Thread thread = new Thread() {
 
@@ -122,4 +116,8 @@ class MainActivity extends AppCompatActivity {
 		TextView textView = findViewById(R.id.Age_will_be);
 		textView.setText("21");
 	}
+
+//	public void add_user(View view){
+//		Log.d("Button","Yes");
+//	}
 }

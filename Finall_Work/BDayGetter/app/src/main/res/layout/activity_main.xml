@@ -27,7 +27,7 @@
             app:layout_constraintTop_toTopOf="parent"
 
             android:id="@+id/B_day_countdown"
-            android:textSize="12pt" android:fontFamily="monospace" android:textAlignment="center"
+            android:textSize="34sp" android:fontFamily="monospace" android:textAlignment="center"
     />
 
     <TextView
