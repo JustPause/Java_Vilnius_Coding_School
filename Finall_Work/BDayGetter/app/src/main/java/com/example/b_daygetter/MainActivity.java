@@ -122,19 +122,20 @@ public class MainActivity extends AppCompatActivity {
 		textView.setText("21");
 	}
 //////////////////////////////
-	public static void add_users_button(View view) {
+
+	public static void add_users_button() {
 
 		Log.d("Cool","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
 
 	}
 
-	public static void list_users_button(View view) {
+	public static void list_users_button() {
 
 		Log.d("Cool","bbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
 
 	}
 
-	public static void send_email_to_the_user_button(View view) {
+	public static void send_email_to_the_user_button() {
 
 		Log.d("Cool","CCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
 
