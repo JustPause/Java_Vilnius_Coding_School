@@ -3,11 +3,11 @@ package com.example.b_daygetter;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public
-class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
 	String dataBaseUserName = "Justinas";
 	String dataBaseUserSurName = "Stankunas";
@@ -51,15 +51,14 @@ class MainActivity extends AppCompatActivity {
 		age_will_be();
 	}
 
-
 	@SuppressLint("SetTextI18n")
 
 	private
 	void init_Data_B_day_countdown() {
 		TextView textView = findViewById(R.id.B_day_countdown);
 
-		Log.d("Debug1", nowTimeYear + " " + nowTimeMonth + " " + nowTimeDay);
-		Log.d("Debug1", dataBaseUserYear + " " + dataBaseUserMonth + " " + dataBaseUserDay);
+//		Log.d("Debug1", nowTimeYear + " " + nowTimeMonth + " " + nowTimeDay);
+//		Log.d("Debug1", dataBaseUserYear + " " + dataBaseUserMonth + " " + dataBaseUserDay);
 
 		if (bDayOf - todayDay < 0) {
 			textView.setText(
@@ -106,7 +105,7 @@ class MainActivity extends AppCompatActivity {
 	protected
 	void User_name() {
 		TextView textView = findViewById(R.id.User_name);
-		textView.setText("Justinas Stankunas");
+		textView.setText(dataBaseUserName + " " + dataBaseUserSurName);
 	}
 
 	@SuppressLint("SetTextI18n")
@@ -122,4 +121,25 @@ class MainActivity extends AppCompatActivity {
 		TextView textView = findViewById(R.id.Age_will_be);
 		textView.setText("21");
 	}
+//////////////////////////////
+	public static void add_users_button(View view) {
+
+		Log.d("Cool","AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+	}
+
+	public static void list_users_button(View view) {
+
+		Log.d("Cool","bbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+
+	}
+
+	public static void send_email_to_the_user_button(View view) {
+
+		Log.d("Cool","CCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
+
+	}
+	//////////////////////////////
 }
+
+
