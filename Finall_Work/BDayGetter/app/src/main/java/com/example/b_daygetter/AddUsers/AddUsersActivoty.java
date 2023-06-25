@@ -9,6 +9,6 @@ public class AddUsersActivoty extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_data_inpit_activoty);
+        setContentView(R.layout.add_users_adtivoty);
     }
 }
