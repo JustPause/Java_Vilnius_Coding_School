@@ -12,6 +12,9 @@
             android:theme="@style/Theme.BDayGetter"
             tools:targetApi="31">
         <activity
+                android:name=".AddMessige"
+                android:exported="false"/>
+        <activity
                 android:name=".AddUsers.AddUsersActivoty"
                 android:exported="false"
                 android:label="@string/title_activity_input_data"

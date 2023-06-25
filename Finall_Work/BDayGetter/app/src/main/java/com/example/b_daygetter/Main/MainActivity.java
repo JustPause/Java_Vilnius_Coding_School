@@ -14,6 +14,8 @@ import com.example.b_daygetter.SendEmailToTheUser.SendEmailToTheUser;
 
 public class MainActivity extends AppCompatActivity {
 
+    // TODO Add an feture that lets the youser get his one color, of core the data will be collected in the data base. On craision the user can have a random color and at any time he can chage it
+    // TODO Add an Data base for fuck sake
     String dataBaseUserName = "Justinas";
     String dataBaseUserSurName = "Stankunas";
     String dataBaseUserYear = "2003";
@@ -72,13 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     String.valueOf(bDayOf - todayDay) + " Days " + (24 - todayTimeH) + " Hour\n " + (60 - todayTimeM) + " Minute " +
                             (60 - todayTimeS) + " Second ");
         }
-//		Period a = Period.between(
-//			LocalDate.of(
-//				Integer.parseInt(dataBaseUserYear+1),
-//				Integer.parseInt(dataBaseUserMonth),
-//				Integer.parseInt(dataBaseUserDay)),
-//			LocalDate.now());
-//		Log.d("Debug2",a.toString());
 
         Thread thread = new Thread() {
 
