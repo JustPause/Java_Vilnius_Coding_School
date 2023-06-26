@@ -1,0 +1,7 @@
+com.example.my_application.test.app-annotation-experimental-1.3.0-0 /home/justinas/.gradle/caches/transforms-3/728ab5a088fb13b3bd2d361b8ab1f5a8/transformed/annotation-experimental-1.3.0/res
+com.example.my_application.test.app-core-1.5.0-1 /home/justinas/.gradle/caches/transforms-3/fe6f45397a1b5739b3edc2949198e87d/transformed/core-1.5.0/res
+com.example.my_application.test.app-androidTest-2 /home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/generated/res/resValues/androidTest/debug
+com.example.my_application.test.app-androidTest-3 /home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/generated/res/rs/androidTest/debug
+com.example.my_application.test.app-mergeDebugAndroidTestResources-4 /home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.example.my_application.test.app-mergeDebugAndroidTestResources-5 /home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.example.my_application.test.app-merged_res-6 /home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/merged_res/debugAndroidTest
