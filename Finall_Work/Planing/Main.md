@@ -41,3 +41,15 @@ Kamputija yra butu trys bruksiukai kurie leist zmogui pasirinkti ir pamatyti 10 
 ## DataBase
 
 Tai busu mysql
+
+
+firebase
+
+https://firebase.google.com/docs/database/android/read-and-write
+
+https://medium.com/firebase-developers/android-mvvm-firestore-37c3a8d65404
+
+Databasse 2 
+Padaryti sveikinimu data basa kur turetu leitu su data ir sting sveikinimu
+
+https://codelabs.developers.google.com/?product=android
