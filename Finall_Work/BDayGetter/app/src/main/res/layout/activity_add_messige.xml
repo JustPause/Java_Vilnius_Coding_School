@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:text="Optinal Palace for Users emal"
+
             android:ems="10"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/editTextTextPersonName4"
