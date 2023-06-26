@@ -1,0 +1,13 @@
+#Mon Jun 26 21:16:43 EEST 2023
+base.0=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/MyNotes/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+base.1=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/MyNotes/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.2=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/MyNotes/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/11/classes.dex
+base.3=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/MyNotes/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/3/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=11/classes.dex
+path.3=3/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
