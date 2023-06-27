@@ -14,5 +14,7 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="version">Dev-build-0.1v</string>
+    <string name="vardas_pavarde">Vardas Pavarde</string>
+    <string name="give_name">Give_Name</string>
 
 </resources>
