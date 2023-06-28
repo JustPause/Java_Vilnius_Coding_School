@@ -28,7 +28,11 @@
             app:layout_constraintTop_toTopOf="parent"
 
             android:id="@+id/B_day_countdown"
+<<<<<<< HEAD
             android:textSize="24sp" android:fontFamily="monospace" android:textAlignment="center"
+=======
+            android:textSize="34sp" android:fontFamily="monospace" android:textAlignment="center"
+>>>>>>> WokingOne
     />
     <TextView
             android:text="@string/date"

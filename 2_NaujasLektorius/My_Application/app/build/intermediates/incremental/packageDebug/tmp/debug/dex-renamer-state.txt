@@ -1,0 +1,13 @@
+#Thu Jun 22 21:28:10 EEST 2023
+base.0=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+base.3=/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/My_Application/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=5/classes.dex
+path.3=7/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
