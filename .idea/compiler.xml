@@ -6,12 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="vcs20230424VCSJAAVAK_exceptions" />
-        <module name="Abstracijos" />
-        <module name="untitled" />
-        <module name="Exsepsions" />
-        <module name="demo" />
-        <module name="ModeOFJava" />
       </profile>
     </annotationProcessing>
   </component>
