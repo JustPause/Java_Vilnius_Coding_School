@@ -1,0 +1,9 @@
+[submodule "1-Izanga"]
+	path = 1-Izanga
+	url = https://github.com/JustPause/1-Izanga.git
+[submodule "2_NaujasLektorius/AbstracijosV2"]
+	path = 2_NaujasLektorius/AbstracijosV2
+	url = https://github.com/JustPause/AbstracijosV2.git
+[submodule "2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions"]
+	path = 2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions
+	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
