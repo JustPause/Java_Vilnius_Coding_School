@@ -13,3 +13,6 @@
 [submodule "2_NaujasLektorius/MediaPlayerV2"]
 	path = 2_NaujasLektorius/MediaPlayerV2
 	url = https://github.com/JustPause/MediaPlayerV2.git
+[submodule "2_NaujasLektorius/ModeOFJavaV2"]
+	path = 2_NaujasLektorius/ModeOFJavaV2
+	url = https://github.com/JustPause/ModeOFJavaV2.git
