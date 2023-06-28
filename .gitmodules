@@ -7,3 +7,9 @@
 [submodule "2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions"]
 	path = 2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions
 	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
+[submodule "2_NaujasLektorius/--force"]
+	path = 2_NaujasLektorius/--force
+	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
+[submodule "2_NaujasLektorius/MediaPlayerV2"]
+	path = 2_NaujasLektorius/MediaPlayerV2
+	url = https://github.com/JustPause/MediaPlayerV2.git
