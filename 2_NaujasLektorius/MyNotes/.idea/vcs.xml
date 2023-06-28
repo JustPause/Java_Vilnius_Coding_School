@@ -3,8 +3,11 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
 >>>>>>> WokingOne
+=======
+>>>>>>> NewMainThisOneV2
   </component>
 </project>

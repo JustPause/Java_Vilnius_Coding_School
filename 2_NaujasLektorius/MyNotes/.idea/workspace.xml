@@ -12,7 +12,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6fe07fa6-013d-4df3-9e4b-e81fcd1c7f50" name="Changes" comment="Y" />
+=======
+    <list default="true" id="6fe07fa6-013d-4df3-9e4b-e81fcd1c7f50" name="Changes" comment="Yes" />
+>>>>>>> NewMainThisOneV2
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,11 +43,16 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
+<<<<<<< HEAD
         <entry key="$PROJECT_DIR$/../.." value="NewMainThisOne2" />
+=======
+        <entry key="$PROJECT_DIR$/../.." value="master" />
+>>>>>>> NewMainThisOneV2
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -51,12 +60,17 @@
   }
 }]]></component>
 =======
+=======
+>>>>>>> NewMainThisOneV2
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+<<<<<<< HEAD
 >>>>>>> Idk_v1
+=======
+>>>>>>> NewMainThisOneV2
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -73,6 +87,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -85,6 +100,8 @@
   }
 }]]></component>
 =======
+=======
+>>>>>>> NewMainThisOneV2
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
@@ -92,11 +109,18 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;NewMainThisOne&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;/home/justinas/Programming/Java_Vilnius_Coding/2_NaujasLektorius/MyNotes&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
 }</component>
 >>>>>>> Idk_v1
+=======
+    &quot;last_opened_file_path&quot;: &quot;/home/justinas/Programming/Java_Vilnius_Coding/Finall_Work/BDayGetter&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  }
+}</component>
+>>>>>>> NewMainThisOneV2
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="lt.justinas.mynotes" />
@@ -135,12 +159,16 @@
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
 =======
       <method v="2" />
 >>>>>>> Idk_v1
+=======
+      <method v="2" />
+>>>>>>> NewMainThisOneV2
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="My Notes" />
