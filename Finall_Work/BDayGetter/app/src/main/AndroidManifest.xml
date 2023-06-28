@@ -4,7 +4,6 @@
 
     <application
             android:allowBackup="true"
-            android:dataExtractionRules="@xml/data_extraction_rules"
             android:fullBackupContent="@xml/backup_rules"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -12,7 +11,25 @@
             android:theme="@style/Theme.BDayGetter"
             tools:targetApi="31">
         <activity
-                android:name=".MainActivity"
+                android:name=".AddUsers.AddMessige"
+                android:exported="false"/>
+        <activity
+                android:name=".AddUsers.AddUsersActivoty"
+                android:exported="false"
+                android:label="@string/title_activity_input_data"
+                android:theme="@style/Theme.BDayGetter.NoActionBar"/>
+        <activity
+                android:name=".ListUsers.ListUsers"
+                android:exported="false"
+                android:label="@string/title_activity_input_data"
+                android:theme="@style/Theme.BDayGetter.NoActionBar"/>
+        <activity
+                android:name=".SendEmailToTheUser.SendEmailToTheUser"
+                android:exported="false"
+                android:label="@string/title_activity_input_data"
+                android:theme="@style/Theme.BDayGetter.NoActionBar"/>
+        <activity
+                android:name=".Main.MainActivity"
                 android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
