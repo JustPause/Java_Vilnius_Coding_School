@@ -4,8 +4,8 @@
 [submodule "2_NaujasLektorius/AbstracijosV2"]
 	path = 2_NaujasLektorius/AbstracijosV2
 	url = https://github.com/JustPause/AbstracijosV2.git
-[submodule "2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions"]
-	path = 2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions
+[submodule "2_NaujasLektorius/GithubRepo"]
+	path = 2_NaujasLektorius/GithubRepo
 	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
 [submodule "2_NaujasLektorius/MediaPlayerV2"]
 	path = 2_NaujasLektorius/MediaPlayerV2
@@ -19,3 +19,7 @@
 [submodule "2_NaujasLektorius/MyNotes"]
 	path = 2_NaujasLektorius/MyNotes
 	url = https://github.com/JustPause/MyNotes.git
+[submodule "2_NaujasLektorius/SpringBoot"]
+	path = 2_NaujasLektorius/SpringBoot
+	url = https://github.com/JustPause/SpringBoot.git
+
