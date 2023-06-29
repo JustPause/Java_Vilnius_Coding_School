@@ -12,7 +12,7 @@
 	url = https://github.com/JustPause/MediaPlayerV2.git
 [submodule "2_NaujasLektorius/ModeOFJavaV2"]
 	path = 2_NaujasLektorius/ModeOFJavaV2
-	url = https://github.com/JustPause/ModeOFJavaV2.git
+	url = https://github.com/JustPause/ModeOFJavaV2
 [submodule "2_NaujasLektorius/My_Application"]
 	path = 2_NaujasLektorius/My_Application
 	url = https://github.com/JustPause/My_Application.git
@@ -22,6 +22,9 @@
 [submodule "2_NaujasLektorius/SpringBoot"]
 	path = 2_NaujasLektorius/SpringBoot
 	url = https://github.com/JustPause/SpringBoot.git
-[submodule "2_NaujasLektorius/Finall_Work"]
-	path = 2_NaujasLektorius/Finall_Work
+[submodule "Finall_Work"]
+	path = Finall_Work
 	url = https://github.com/JustPause/Finall_Work.git
+[submodule "2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions"]
+	path = 2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions
+	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
