@@ -2,12 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-<<<<<<< HEAD
-    <mapping directory="$PROJECT_DIR$/2_NaujasLektorius/GithubRepo" vcs="Git" />
-=======
-    <mapping directory="$PROJECT_DIR$/2_NaujasLektorius/Exsepsions" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/2_NaujasLektorius/GithubRepo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/2_NaujasLektorius/MediaPlayer" vcs="Git" />
->>>>>>> b619c4a24997b27e6039cc3b7bf4927f4f41e5f1
   </component>
 </project>
