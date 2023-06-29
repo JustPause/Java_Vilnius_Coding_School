@@ -1,3 +1,0 @@
-lt.justinas.mynotes.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

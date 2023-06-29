@@ -1,0 +1,30 @@
+[submodule "1-Izanga"]
+	path = 1-Izanga
+	url = https://github.com/JustPause/1-Izanga.git
+[submodule "2_NaujasLektorius/AbstracijosV2"]
+	path = 2_NaujasLektorius/AbstracijosV2
+	url = https://github.com/JustPause/AbstracijosV2.git
+[submodule "2_NaujasLektorius/GithubRepo"]
+	path = 2_NaujasLektorius/GithubRepo
+	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
+[submodule "2_NaujasLektorius/MediaPlayerV2"]
+	path = 2_NaujasLektorius/MediaPlayerV2
+	url = https://github.com/JustPause/MediaPlayerV2.git
+[submodule "2_NaujasLektorius/ModeOFJavaV2"]
+	path = 2_NaujasLektorius/ModeOFJavaV2
+	url = https://github.com/JustPause/ModeOFJavaV2
+[submodule "2_NaujasLektorius/My_Application"]
+	path = 2_NaujasLektorius/My_Application
+	url = https://github.com/JustPause/My_Application.git
+[submodule "2_NaujasLektorius/MyNotes"]
+	path = 2_NaujasLektorius/MyNotes
+	url = https://github.com/JustPause/MyNotes.git
+[submodule "2_NaujasLektorius/SpringBoot"]
+	path = 2_NaujasLektorius/SpringBoot
+	url = https://github.com/JustPause/SpringBoot.git
+[submodule "Finall_Work"]
+	path = Finall_Work
+	url = https://github.com/JustPause/Finall_Work.git
+[submodule "2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions"]
+	path = 2_NaujasLektorius/vcs20230424VCSJAAVAK_exceptions
+	url = https://github.com/Dailius-VCS/vcs20230424VCSJAAVAK_exceptions.git
